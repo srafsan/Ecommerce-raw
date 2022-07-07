@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapics.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900@display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 
 h1 {
@@ -52,6 +52,18 @@ button.normal {
     border-radius: 4px;
     cursor: pointer;
     border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
     outline: none;
     transition: 0.2s ease;
 }
@@ -300,4 +312,99 @@ body {
 #banner button:hover {
     background-color: #088178;
     color: white;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner #sm-bbox1 {
+    background-image: url("img/banner/b17.jpg");
+}
+
+#sm-banner #sm-bbox2 {
+    background-image: url("img/banner/b10.jpg");
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 49.5%; /* 580px */
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+
+#sm-banner h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button {
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 #bbox1 {
+    background-image: url("img/banner/b7.jpg");
+}
+
+#banner3 #bbox2 {
+    background-image: url("img/banner/b4.jpg");
+}
+
+#banner3 #bbox3 {
+    background-image: url("img/banner/b18.jpg");
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
 }
